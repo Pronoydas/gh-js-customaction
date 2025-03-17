@@ -79,11 +79,10 @@ jobs:
       - name: Output contents
         run: ls
       - name: Deploy site
-        run: echo "Deploying..."
-  Infromation:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get Custom Action Code 
-        uses: actions/checkout@v4 
-      - name: Run Custom Actions   
         uses: ./.github/actions/deploy-s3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }} 
+        with:
+          bucket: jscustomaction-bucket
+          dist-folder: ./dist
