@@ -6,8 +6,7 @@ inputs:
     required: true 
   bucket-region:
     description: 'The Region Name'
-    required: false
-    deafult: 'ap-south-1'
+    required: true
   dist-folder:
     description: 'The Folder Contains Deployaable Files'
     required: true     

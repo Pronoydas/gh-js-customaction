@@ -86,3 +86,4 @@ jobs:
         with:
           bucket: jscustomaction-bucket
           dist-folder: ./dist
+          bucket-region: 'ap-south-1'
