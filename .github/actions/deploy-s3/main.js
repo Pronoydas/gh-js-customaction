@@ -16,3 +16,9 @@ function run() {
 }
 
 run();
+
+// To Create JS-Node Project 
+// Frsit - Run - npm init -y will crate packegr.json and other file 
+// Then install dependies -- npm run @actions/core @actions/github @actions/exec 
+// above code to install git hub depen
+
